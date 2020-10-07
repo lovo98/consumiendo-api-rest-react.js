@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.datatable-responsive-demo
+  .p-datatable-responsive-demo
+  .p-datatable-tbody
+  > tr
+  > td
+  .p-column-title {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 80%;
+  margin: 20px auto;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.input-width {
+  width: 100%;
+}
+
+@media screen and (max-width: 40em) {
+  .datatable-responsive-demo
+    .p-datatable.p-datatable-responsive-demo
+    .p-datatable-thead
+    > tr
+    > th,
+  .datatable-responsive-demo
+    .p-datatable.p-datatable-responsive-demo
+    .p-datatable-tfoot
+    > tr
+    > td {
+    display: none !important;
+  }
+
+  .datatable-responsive-demo
+    .p-datatable.p-datatable-responsive-demo
+    .p-datatable-tbody
+    > tr
+    > td {
+    text-align: left;
+    display: block;
+    width: 100%;
+    float: left;
+    clear: left;
+    border: 0 none;
+  }
+
+  .datatable-responsive-demo
+    .p-datatable.p-datatable-responsive-demo
+    .p-datatable-tbody
+    > tr
+    > td
+    .p-column-title {
+    padding: 0.4rem;
+    min-width: 30%;
+    display: inline-block;
+    margin: -0.4em 1em -0.4em -0.4rem;
+    font-weight: bold;
+  }
+
+  .datatable-responsive-demo
+    .p-datatable.p-datatable-responsive-demo
+    .p-datatable-tbody
+    > tr
+    > td:last-child {
+    border-bottom: 1px solid var(--surface-d);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes ui-progress-spinner-color {
+  100%,
+  0% {
+    stroke: #d62d20;
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
   }
 }
